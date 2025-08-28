@@ -1,0 +1,207 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f8fafd;
+
+  h1 {
+    color: rgb(45, 45, 45);
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+.tab-content {
+  padding: 0px;
+}
+
+.search-field {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+  box-shadow: none;
+
+  table {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+  }
+}
+
+// Estilos para badges de status
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &.status-0 {
+    background-color: #ffef97;
+    color: #be6c00;
+  }
+
+  &.status-1 {
+    background-color: #b5e0ff;
+    color: #004ea7;
+  }
+
+  &.status-2 {
+    background-color: #d3ffd7;
+    color: #1a691e;
+  }
+
+  &.status-3 {
+    background-color: #ffafaf;
+    color: #df0000;
+  }
+}
+
+// Estilos para badges de tipo
+.tipo-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &.tipo-0 {
+    background-color: #e8eaf6;
+    color: #283593;
+  }
+
+  &.tipo-1 {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+}
+
+// Estilos para indicadores de vinculação
+.vinculado {
+  color: #000000;
+}
+
+.nao-vinculado {
+  color: #d3d3d3;
+}
+
+// Ajustes para a tabela
+.mat-header-cell {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mat-cell,
+.mat-header-cell {
+  padding: 0 16px;
+}
+
+.mat-mdc-table tbody,
+.mat-mdc-table tfoot,
+.mat-mdc-table thead,
+.mat-mdc-cell,
+.mat-mdc-footer-cell,
+.mat-mdc-header-row,
+.mat-mdc-row,
+.mat-mdc-footer-row,
+.mat-mdc-table .mat-mdc-header-cell {
+  color: rgb(45, 45, 45);
+}
+
+.mat-mdc-row {
+  &:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+}
+
+.actions-header {
+  text-align: center;
+  width: 160px;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+.actions-header {
+  text-align: center;
+  width: 180px;
+}
+
+.actions-cell {
+  text-align: center;
+}
+
+.meuButtonAction {
+  width: 100%;
+  white-space: nowrap;
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .mat-cell,
+  .mat-header-cell {
+    padding: 0 8px;
+  }
+
+  .table-container {
+    font-size: 12px;
+  }
+
+  .status-badge,
+  .tipo-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}
+
+.meuButtonAction {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #1565c0;
+  }
+}
+
+.status-badge, .tipo-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-0 { background-color: #ff9800; color: white; }
+.status-1 { background-color: #4caf50; color: white; }
+.status-2 { background-color: #2196f3; color: white; }
+.status-3 { background-color: #f44336; color: white; }
+
+.tipo-0 { background-color: #2196f3; color: white; }
+.tipo-1 { background-color: #ff9800; color: white; }
+
+.vinculado {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.nao-vinculado {
+  color: #f44336;
+  font-weight: bold;
+}
